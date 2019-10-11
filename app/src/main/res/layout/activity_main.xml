@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="238dp"
+        android:layout_height="137dp"
+        android:text="Income Tax Calculator"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="325dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/basicSalaryEditText"
+                android:layout_width="336dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:hint="Enter basic salary"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="25dp"
+                app:backgroundTint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/hraMonthlyEditText"
+                    android:layout_width="148dp"
+                    android:layout_height="51dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="HRA(Monthly)"
+                    android:inputType="number"
+                    android:textColor="#ffff"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    app:backgroundTint="#ffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.325" />
+
+                <EditText
+                    android:id="@+id/rentMonthlyEditText"
+                    android:layout_width="142dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Rent(Monthly)"
+                    android:inputType="number"
+                    android:textColor="#ffff"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    app:backgroundTint="#ffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.593"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.722" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/specialAllowanceEditText"
+                android:layout_width="336dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Any Special Allowance?"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="25dp"
+                app:backgroundTint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61" />
+
+            <EditText
+                android:id="@+id/housingLoanInterestEditText"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Housing Loan Interest Exemption"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="20dp"
+                app:backgroundTint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61" />
+
+            <EditText
+                android:id="@+id/totalExemptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Total exemption under 80C"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="25dp"
+                app:backgroundTint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61" />
+
+            <EditText
+                android:id="@+id/otherdeductionsEditText"
+                android:layout_width="336dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Total other deductions"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="25dp"
+                app:backgroundTint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:background="@drawable/buttondesign"
+        android:text="submit"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:background="@drawable/buttondesign"
+        android:text="reset"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 otherdeductionValue=Integer.parseInt(otherDeduction.getText().toString());
                 if(otherdeductionValue>25000) otherdeductionValue=25000;
 
-                double hrayearly1=0,hrayearly2=0,hraearly3=0;
+                double hrayearly1=0,hrayearly2=0,hrayearly3=0;
                 hrayearly1=(basicSalaryValue*0.5);
                 hrayearly2=rentValue-(0.1*basicSalaryValue);
-                hraearly3=rentValue;
+                hrayearly3=rentValue;
 
-                double hraFinalValue=Math.min(hrayearly1,Math.min(hrayearly2,hraearly3));
+                double hraFinalValue=Math.min(hrayearly1*12,Math.min(hrayearly2*12,hrayearly3*12));
 
-                double totalIncome=basicSalaryValue+hraFinalValue+specialAllowanceValue;
+                double totalIncome=basicSalaryValue*12+hraValue*12-hraFinalValue+specialAllowanceValue*12;
 
 
                 double taxableIncome=totalIncome-housingLoanInterestValue-exemption80CValue-otherdeductionValue-50000;
